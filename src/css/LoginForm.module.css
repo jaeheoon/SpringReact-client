@@ -1,0 +1,80 @@
+.main {
+    margin: 50px auto;
+    text-align: center;
+    width: 40%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* 행 간격 */
+}
+
+.main th {
+    text-align: left;
+    font-weight: normal;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+.main td {
+    text-align: left;
+}
+
+/* 입력 필드 스타일 */
+.main input[type="text"],
+.main input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.main input[type="text"]:focus,
+.main input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 에러 메시지 스타일 */
+#idDiv,
+#pwdDiv,
+#loginDiv {
+    color: red;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* 로그인 버튼 스타일 */
+.main button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main button:hover {
+    background-color: #0056b3;
+}
