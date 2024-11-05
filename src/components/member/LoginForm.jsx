@@ -21,7 +21,7 @@ const LoginForm = () => {
         id === '' && setIdDiv('아이디 입력')
         pwd === '' && setPwdDiv('비밀번호 입력')
 
-        axios.post('http://localhost/SpringReactProject/member/login', {id, pwd}, { withCredentials: true })
+        axios.post('http://211.188.54.228/SpringReactProject/member/login', {id, pwd}, { withCredentials: true })
              .then(response => {
                 response.data.result === "SUCCESS" ? navigator('/') : setLoginDiv('아이디나 비밀번호가 틀렸습니다.');
              })
