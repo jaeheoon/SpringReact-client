@@ -6,7 +6,7 @@ const List = () => {
     const [boards, setBoards] = useState([]); 
 
     useEffect(() => {
-        axios.get('http://localhost/SpringReactProject/board/list') 
+        axios.get('http://211.188.54.228/SpringReactProject/board/list') 
             .then(response => setBoards(response.data)) 
     }, []);
 
