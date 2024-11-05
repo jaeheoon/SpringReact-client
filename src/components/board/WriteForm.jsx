@@ -18,7 +18,7 @@ const WriteForm = () => {
         subject === '' && setSubjectDiv('제목 입력')
         content === '' && setContentDiv('내용 입력')
 
-        axios.post('http://localhost/SpringReactProject/board/write', { subject, content }, { withCredentials: true })
+        axios.post('http://211.188.54.228/SpringReactProject/board/write', { subject, content }, { withCredentials: true })
              .then(response => {
                 response.data.result === "SUCCESS" ? navigator('/board/list') : alert('글 작성이 실패했습니다.');
              })
